@@ -9,7 +9,7 @@ const appointmentsRouter = Router();
 const appointmentsController = new AppointmentsController();
 const providerAppointmentsController = new ProviderAppointmentsController();
 
-appointmentsRouter.use(ensureAuthenticated); // To the athentication to be used on all appointment routes
+appointmentsRouter.use(ensureAuthenticated); // To the authentication to be used on all appointment routes
 
 appointmentsRouter.post(
   '/',
